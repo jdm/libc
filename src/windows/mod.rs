@@ -193,7 +193,7 @@ pub const SIG_ERR: ::c_int = -1;
 
 // inline comment below appeases style checker
 #[cfg(all(target_env = "msvc", feature = "rustc-dep-of-std"))] // " if "
-#[link(name = "msvcrt", cfg(not(target_feature = "crt-static")))]
+#[link(name = "msvcrtd", cfg(not(target_feature = "crt-static")))]
 #[link(name = "libcmt", cfg(target_feature = "crt-static"))]
 extern {}
 
